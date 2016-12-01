@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		.clearfix:after{
+			content: '';
+			display: table;
+			clear: both;
+			}
+			#box{width: 822px;
+				height: 268px;
+				border: 2px solid lightpink;
+				margin: 150px auto;
+				overflow: hidden;}
+			#big{width: 1644px;
+				height: 266px;}
+			#one,#two{width: 820px;
+				height: 266px;
+				border: 1px solid palegreen;
+				float: left;}
+			img{float: left;
+				width: 200px;
+				height: 266px;
+				margin-right: 5px;}	
+			/*img:nth-child(4){margin:0;}*/
+		</style>
+		
+
+	</head>
+	<body>
+		<div id="box" class="clearfix">
+			<div id="big">
+				<div id="one">
+					<a href=""><img src="img/1.jpg" alt="" /></a>
+					<a href=""><img src="img/2.jpg" alt="" /></a>
+					<a href=""><img src="img/3.jpg" alt="" /></a>
+					<a href=""><img src="img/4.jpg" alt="" /></a>
+				</div>
+				<div id="two"></div>
+			</div>
+		</div>
+			
+			<script type="text/javascript">
+				var box=document.getElementById('box');
+				var one=document.getElementById("one");
+				var two=document.getElementById("two");
+				var t;
+				two.innerHTML=one.innerHTML;
+				
+				function scrollImg(){
+					clearTimeout(t);
+					if(box.scrollLeft>=one.offsetWidth){
+						box.scrollLeft -= one.offsetWidth;
+					}else{
+						box.scrollLeft+=1;
+					}
+					t=setTimeout('scrollImg()',1);
+				}
+				window.onload=scrollImg;
+			</script>
+		
+		
+		
+	</body>
+</html>
