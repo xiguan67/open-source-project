@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>瀑布流效果</title>
+	<style>
+		#main1{
+			width: 1000px;margin: 0 auto; border: 1px red solid;overflow: hidden;
+		}
+		#main1 .list1{ width: 235px; margin-right: 15px; float: left;}
+		
+		#main1 .list1 img{width:235px;}
+		#img{width: 200px;}
+	</style>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.pubu.js"></script>
+	</head>
+	<body>
+		<img src="img/1.jpg" id="img">
+		<div id="main1">
+			<div class="list1">
+				<a href="#"><img src="img/pinpai/pubuliu/1.jpg"> </a>
+				<a href="#"><img src="img/pinpai/pubuliu/2.jpg"> </a>
+				<a href="#"><img src="img/pinpai/pubuliu/3.jpg"> </a>
+				<a href="#"><img src="img/pinpai/pubuliu/4.jpg"> </a>
+				<a href="#"><img src="img/pinpai/pubuliu/5.jpg"> </a>
+				<a href="#"><img src="img/pinpai/pubuliu/5.jpg"> </a>
+			</div>
+			<div class="list1">
+				<a href="#"><img src="img/pinpai/pubuliu/1.jpg"> </a>
+				<a href="#"><img src="img/pinpai/pubuliu/3.jpg"> </a>
+				<a href="#"><img src="img/pinpai/pubuliu/2.jpg"> </a>
+				<a href="#"><img src="img/pinpai/pubuliu/5.jpg"> </a>
+				<a href="#"><img src="img/pinpai/pubuliu/4.jpg"> </a>
+			</div>
+			<div class="list1">
+				<a href="#"><img src="img/pinpai/pubuliu/1.jpg"> </a>
+				<a href="#"><img src="img/pinpai/pubuliu/2.jpg"> </a>
+				<a href="#"><img src="img/pinpai/pubuliu/3.jpg"> </a>
+				<a href="#"><img src="img/pinpai/pubuliu/4.jpg"> </a>
+				<a href="#"><img src="img/pinpai/pubuliu/5.jpg"> </a>
+			</div>
+			<div class="list1" style="margin-right: 0;">
+				<a href="#"><img src="img/pinpai/pubuliu/1.jpg"> </a>
+				<a href="#"><img src="img/pinpai/pubuliu/3.jpg"> </a>
+				<a href="#"><img src="img/pinpai/pubuliu/2.jpg"> </a>
+				<a href="#"><img src="img/pinpai/pubuliu/5.jpg"> </a>
+				<a href="#"><img src="img/pinpai/pubuliu/4.jpg"> </a>
+			</div>
+		</div>
+	</body>
+	
+	<script>
+
+		$(function(){
+			//插件的调用
+			$(window).pubu({
+				main:'#main1',  //父容器id
+				list:'.list1'	//列表的class值
+			});
+		})
+	</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
