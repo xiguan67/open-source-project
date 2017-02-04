@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>文化嘉定</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src='js/jquery-3.1.1.js'></script>
+</head>
+<body>
+	<a id="gotop" href="javascript:scroll(0,0)"></a>
+	<header>
+	<!-- 最上部登陆信息、搜索 -->
+		<div class="top">
+			<div class="tops">
+				<div class="tops-l">
+					<span>Hi,游客&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+					<span><a href="">我的空间</a>&nbsp;&nbsp;&nbsp;|&nbsp;</span>
+					<span><a href="">退出&nbsp;&nbsp;</a></span>
+					<span id="dlu"><a href="javascript:void(0)">登陆&nbsp;&nbsp;</a></span>
+					<span><a href="">注册&nbsp;&nbsp;</a></span>
+				</div>
+				<div class="tops-r">
+					<div class="search"><input type="text" placeholder="请输入你感兴趣的内容">
+					<div class="dosch"></div>
+					</div>
+					<div class="mobile">移动端</div>
+				</div>
+			</div>
+		</div>
+	<!--logo+导航部分  -->
+		<div class="nav">
+			<div class="navs clearfix">
+				<ul>
+					<li class="active"><a href="">网上书房</a></li>
+					<li><a href="">数字展馆</a></li>
+					<li><a href="">文化预告</a></li>
+					<li><a href="">文化热点</a></li>
+					<li><a href="">我要分享</a></li>
+					<li><a href="">我要预约</a></li>
+					<li><a href="">我要推荐</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<!-- 内容部分 -->
+	<section>
+
+		<!-- 轮播部分 -->
+		<div class="carousel clearfix">
+			<div class="patch patch1"></div>
+		<div class="patch patch2"></div>
+			<ul class="carimg">
+				<li><img src="images/banner.jpg" alt=""></li>
+				<li><img src="images/shz.jpg" alt=""></li>
+				<li><img src="images/circle.jpg" alt=""></li>
+			</ul>
+			<ul class="control clearfix">
+				<li id="curr"></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<!-- 网上书房，数字展馆 -->
+		<div class="all">
+			<div class="con">
+				<!-- <div style="float:left"><img src="images/img1.jpg" alt=""></div> -->
+				<div class="show study">
+					<img class="stuall" src="images/jj.jpg" alt="">
+					<a href="" class="stu stu1"></a>
+					<a href="" class="stu stu2"></a>
+					<a href="" class="stu stu3"></a>
+					<a href="" class="stu stu4"></a>
+					<a href="" class="stu stu5"></a>
+					<a href="" class="stu stu6"></a>
+				</div>
+				<div class="show dig">
+					<img id="sztitle" src="images/shuzi.png">
+					<!-- 轮播部分 -->
+					<div class="option">
+						<img class="opimg" src="images/Hall1_03.jpg" alt="">
+					</div>
+					<!-- 控制部分 -->
+					<ul class="opcontrol">
+						<li class="opactive">
+							<span class="intro" >第一张图片
+							<b class="deco"></b>
+							</span>
+						</li>
+						<li >
+							<span class="intro" >第一张图片
+							<b class="deco"></b>
+							</span>
+						</li>
+						<li >
+							<span class="intro" >第一张图片
+							<b class="deco"></b>
+							</span>
+						</li>
+						<li >
+							<span class="intro" >第一张图片
+							<b class="deco"></b>
+							</span>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 文化预告 文化热点 -->
+		<div class="culture clearfix">
+
+			<div class="culcon clearfix">
+				<div class="events">
+					<h2 class="evetitile">文化预告</h2>
+					<div class="imgnav">
+						<img class='imgs' id="ccc" src="images/l1.jpg" alt="">
+						<img class='imgs' src="images/b2.jpg" alt="">
+						<img class='imgs' src="images/b3.jpg" alt="">
+						<img class='imgs' src="images/b4.jpg" alt="">
+						<!-- 选项卡div内的内容 -->
+						<!-- 第一个 -->
+						<div class="evencon" >
+							<div class="eventop ">
+								<span>演出</span>
+								<a href="" class='more'>MORE</a>
+								<div class="lnr">
+									<a class="lpre lnrs"  id='lnrac' ></a>
+									<a class="rnext lnrs" ></a>
+								</div>
+								<div class='navcon'>
+									<div class='navcona'>
+										<ul class='detail'>
+											<li>
+											<span>现场参加</span>
+											<a href="">"这是导航一（真新街道赛区）</a>  </li>
+											<li><em>主办单位：</em>真新街道文化体育服务中心</li>
+											<li><em>演出地点：</em>真新街道社区文化活动中心小剧场</li>
+											<li><em>演出时间：</em>2014年4月19日、26日下午13：00</li>
+											<li><em>咨询电话：</em>59188401</li>
+											<li><em>演出简介：</em>为音乐爱好者搭建才艺展示的平台，进一步呈现美好和谐的文化繁荣景象。 有钢琴独奏《船歌》、大提琴《旋 律》、葫芦丝《花满楼》，女声独唱《芦花》、小合唱《天路》等40余组选手报名参与。</li>
+											<div style="border-bottom:1px solid gray;margin-top:10px"></div>
+										</ul>
+
+										<ul class='detail'>
+											<li>
+											<span>现场参加</span>
+											<a href="">"乐在其中"2014年嘉定区音乐大赛（真新街道赛区）</a>  </li>
+											<li><em>主办单位：</em>真新街道文化体育服务中心</li>
+											<li><em>演出地点：</em>真新街道社区文化活动中心小剧场</li>
+											<li><em>演出时间：</em>2014年4月19日、26日下午13：00</li>
+											<li><em>咨询电话：</em>59188401</li>
+											<li><em>演出简介：</em>为音乐爱好者搭建才艺展示的平台，进一步呈现美好和谐的文化繁荣景象。 有钢琴独奏《船歌》、大提琴《旋 律》、葫芦丝《花满楼》，女声独唱《芦花》、小合唱《天路》等40余组选手报名参与。</li>
+
+										</ul>
+									</div>
+									<div class='navcona'>
+										<ul class='detail'>
+											<li>
+											<span>现场参加</span>
+											<a href="">"乐在其中"2014年嘉定区音乐大赛（真新街道赛区）</a>  </li>
+											<li><em>主办单位：</em>真新街道文化体育服务中心</li>
+											<li><em>演出地点：</em>真新街道社区文化活动中心小剧场</li>
+											<li><em>演出时间：</em>2014年4月19日、26日下午13：00</li>
+											<li><em>咨询电话：</em>59188401</li>
+											<li><em>演出简介：</em>为音乐爱好者搭建才艺展示的平台，进一步呈现美好和谐的文化繁荣景象。 有钢琴独奏《船歌》、大提琴《旋 律》、葫芦丝《花满楼》，女声独唱《芦花》、小合唱《天路》等40余组选手报名参与。</li>
+											<div style="border-bottom:1px solid gray;margin-top:10px"></div>
+										</ul>
+
+										<ul class='detail'>
+											<li>
+											<span>现场参加</span>
+											<a href="">"乐在其中"2014年嘉定区音乐大赛（真新街道赛区）</a>  </li>
+											<li><em>主办单位：</em>真新街道文化体育服务中心</li>
+											<li><em>演出地点：</em>真新街道社区文化活动中心小剧场</li>
+											<li><em>演出时间：</em>2014年4月19日、26日下午13：00</li>
+											<li><em>咨询电话：</em>59188401</li>
+											<li><em>演出简介：</em>为音乐爱好者搭建才艺展示的平台，进一步呈现美好和谐的文化繁荣景象。 有钢琴独奏《船歌》、大提琴《旋 律》、葫芦丝《花满楼》，女声独唱《芦花》、小合唱《天路》等40余组选手报名参与。</li>
+
+										</ul>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 第二个 -->
+						<div class="evencon" style="display:none">
+							<div class="eventop ">
+								<span>音乐</span>
+								<a href="" class='more'>MORE</a>
+								<div class="lnr">
+									<a class="lpre lnrs"  id='lnrac' ></a>
+									<a class="rnext lnrs" ></a>
+								</div>
+								<div class='navcon'>
+									<div class='navcona'>
+										<ul class='detail'>
+											<li>
+											<span>现场参加</span>
+											<a href="">"这是导航二（真新街道赛区）</a>  </li>
+											<li><em>主办单位：</em>真新街道文化体育服务中心</li>
+											<li><em>演出地点：</em>真新街道社区文化活动中心小剧场</li>
+											<li><em>演出时间：</em>2014年4月19日、26日下午13：00</li>
+											<li><em>咨询电话：</em>59188401</li>
+											<li><em>演出简介：</em>为音乐爱好者搭建才艺展示的平台，进一步呈现美好和谐的文化繁荣景象。 有钢琴独奏《船歌》、大提琴《旋 律》、葫芦丝《花满楼》，女声独唱《芦花》、小合唱《天路》等40余组选手报名参与。</li>
+											<div style="border-bottom:1px solid gray;margin-top:10px"></div>
+										</ul>
+
+										<ul class='detail'>
+											<li>
+											<span>现场参加</span>
+											<a href="">"乐在其中"2014年嘉定区音乐大赛（真新街道赛区）</a>  </li>
+											<li><em>主办单位：</em>真新街道文化体育服务中心</li>
+											<li><em>演出地点：</em>真新街道社区文化活动中心小剧场</li>
+											<li><em>演出时间：</em>2014年4月19日、26日下午13：00</li>
+											<li><em>咨询电话：</em>59188401</li>
+											<li><em>演出简介：</em>为音乐爱好者搭建才艺展示的平台，进一步呈现美好和谐的文化繁荣景象。 有钢琴独奏《船歌》、大提琴《旋 律》、葫芦丝《花满楼》，女声独唱《芦花》、小合唱《天路》等40余组选手报名参与。</li>
+
+										</ul>
+									</div>
+									<div class='navcona'>
+										<ul class='detail'>
+											<li>
+											<span>现场参加</span>
+											<a href="">"乐在其中"2014年嘉定区音乐大赛（真新街道赛区）</a>  </li>
+											<li><em>主办单位：</em>真新街道文化体育服务中心</li>
+											<li><em>演出地点：</em>真新街道社区文化活动中心小剧场</li>
+											<li><em>演出时间：</em>2014年4月19日、26日下午13：00</li>
+											<li><em>咨询电话：</em>59188401</li>
+											<li><em>演出简介：</em>为音乐爱好者搭建才艺展示的平台，进一步呈现美好和谐的文化繁荣景象。 有钢琴独奏《船歌》、大提琴《旋 律》、葫芦丝《花满楼》，女声独唱《芦花》、小合唱《天路》等40余组选手报名参与。</li>
+											<div style="border-bottom:1px solid gray;margin-top:10px"></div>
+										</ul>
+
+										<ul class='detail'>
+											<li>
+											<span>现场参加</span>
+											<a href="">"乐在其中"2014年嘉定区音乐大赛（真新街道赛区）</a>  </li>
+											<li><em>主办单位：</em>真新街道文化体育服务中心</li>
+											<li><em>演出地点：</em>真新街道社区文化活动中心小剧场</li>
+											<li><em>演出时间：</em>2014年4月19日、26日下午13：00</li>
+											<li><em>咨询电话：</em>59188401</li>
+											<li><em>演出简介：</em>为音乐爱好者搭建才艺展示的平台，进一步呈现美好和谐的文化繁荣景象。 有钢琴独奏《船歌》、大提琴《旋 律》、葫芦丝《花满楼》，女声独唱《芦花》、小合唱《天路》等40余组选手报名参与。</li>
+
+										</ul>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 第三个 -->
+						<div class="evencon" style="display:none">
+							<div class="eventop ">
+								<span>交流</span>
+								<a href="" class='more'>MORE</a>
+								<div class="lnr">
+									<a class="lpre lnrs"  id='lnrac' ></a>
+									<a class="rnext lnrs" ></a>
+								</div>
+								<div class='navcon'>
+									<div class='navcona'>
+										<ul class='detail'>
+											<li>
+											<span>现场参加</span>
+											<a href="">"这是导航三（真新街道赛区）</a>  </li>
+											<li><em>主办单位：</em>真新街道文化体育服务中心</li>
+											<li><em>演出地点：</em>真新街道社区文化活动中心小剧场</li>
+											<li><em>演出时间：</em>2014年4月19日、26日下午13：00</li>
+											<li><em>咨询电话：</em>59188401</li>
+											<li><em>演出简介：</em>为音乐爱好者搭建才艺展示的平台，进一步呈现美好和谐的文化繁荣景象。 有钢琴独奏《船歌》、大提琴《旋 律》、葫芦丝《花满楼》，女声独唱《芦花》、小合唱《天路》等40余组选手报名参与。</li>
+											<div style="border-bottom:1px solid gray;margin-top:10px"></div>
+										</ul>
+
+										<ul class='detail'>
+											<li>
+											<span>现场参加</span>
+											<a href="">"乐在其中"2014年嘉定区音乐大赛（真新街道赛区）</a>  </li>
+											<li><em>主办单位：</em>真新街道文化体育服务中心</li>
+											<li><em>演出地点：</em>真新街道社区文化活动中心小剧场</li>
+											<li><em>演出时间：</em>2014年4月19日、26日下午13：00</li>
+											<li><em>咨询电话：</em>59188401</li>
+											<li><em>演出简介：</em>为音乐爱好者搭建才艺展示的平台，进一步呈现美好和谐的文化繁荣景象。 有钢琴独奏《船歌》、大提琴《旋 律》、葫芦丝《花满楼》，女声独唱《芦花》、小合唱《天路》等40余组选手报名参与。</li>
+
+										</ul>
+									</div>
+									<div class='navcona'>
+										<ul class='detail'>
+											<li>
+											<span>现场参加</span>
+											<a href="">"乐在其中"2014年嘉定区音乐大赛（真新街道赛区）</a>  </li>
+											<li><em>主办单位：</em>真新街道文化体育服务中心</li>
+											<li><em>演出地点：</em>真新街道社区文化活动中心小剧场</li>
+											<li><em>演出时间：</em>2014年4月19日、26日下午13：00</li>
+											<li><em>咨询电话：</em>59188401</li>
+											<li><em>演出简介：</em>为音乐爱好者搭建才艺展示的平台，进一步呈现美好和谐的文化繁荣景象。 有钢琴独奏《船歌》、大提琴《旋 律》、葫芦丝《花满楼》，女声独唱《芦花》、小合唱《天路》等40余组选手报名参与。</li>
+											<div style="border-bottom:1px solid gray;margin-top:10px"></div>
+										</ul>
+
+										<ul class='detail'>
+											<li>
+											<span>现场参加</span>
+											<a href="">"乐在其中"2014年嘉定区音乐大赛（真新街道赛区）</a>  </li>
+											<li><em>主办单位：</em>真新街道文化体育服务中心</li>
+											<li><em>演出地点：</em>真新街道社区文化活动中心小剧场</li>
+											<li><em>演出时间：</em>2014年4月19日、26日下午13：00</li>
+											<li><em>咨询电话：</em>59188401</li>
+											<li><em>演出简介：</em>为音乐爱好者搭建才艺展示的平台，进一步呈现美好和谐的文化繁荣景象。 有钢琴独奏《船歌》、大提琴《旋 律》、葫芦丝《花满楼》，女声独唱《芦花》、小合唱《天路》等40余组选手报名参与。</li>
+
+										</ul>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 第四个 -->
+						<div class="evencon" style="display:none">
+							<div class="eventop ">
+								<span>日程</span>
+								<a href="" class='more'>MORE</a>
+								<div class="lnr">
+									<a class="lpre lnrs"  id='lnrac' ></a>
+									<a class="rnext lnrs" ></a>
+								</div>
+								<div class='navcon'>
+									<div class='navcona'>
+										<ul class='detail'>
+											<li>
+											<span>现场参加</span>
+											<a href="">"这是导航四（真新街道赛区）</a>  </li>
+											<li><em>主办单位：</em>真新街道文化体育服务中心</li>
+											<li><em>演出地点：</em>真新街道社区文化活动中心小剧场</li>
+											<li><em>演出时间：</em>2014年4月19日、26日下午13：00</li>
+											<li><em>咨询电话：</em>59188401</li>
+											<li><em>演出简介：</em>为音乐爱好者搭建才艺展示的平台，进一步呈现美好和谐的文化繁荣景象。 有钢琴独奏《船歌》、大提琴《旋 律》、葫芦丝《花满楼》，女声独唱《芦花》、小合唱《天路》等40余组选手报名参与。</li>
+											<div style="border-bottom:1px solid gray;margin-top:10px"></div>
+										</ul>
+
+										<ul class='detail'>
+											<li>
+											<span>现场参加</span>
+											<a href="">"乐在其中"2014年嘉定区音乐大赛（真新街道赛区）</a>  </li>
+											<li><em>主办单位：</em>真新街道文化体育服务中心</li>
+											<li><em>演出地点：</em>真新街道社区文化活动中心小剧场</li>
+											<li><em>演出时间：</em>2014年4月19日、26日下午13：00</li>
+											<li><em>咨询电话：</em>59188401</li>
+											<li><em>演出简介：</em>为音乐爱好者搭建才艺展示的平台，进一步呈现美好和谐的文化繁荣景象。 有钢琴独奏《船歌》、大提琴《旋 律》、葫芦丝《花满楼》，女声独唱《芦花》、小合唱《天路》等40余组选手报名参与。</li>
+
+										</ul>
+									</div>
+									<div class='navcona'>
+										<ul class='detail'>
+											<li>
+											<span>现场参加</span>
+											<a href="">"乐在其中"2014年嘉定区音乐大赛（真新街道赛区）</a>  </li>
+											<li><em>主办单位：</em>真新街道文化体育服务中心</li>
+											<li><em>演出地点：</em>真新街道社区文化活动中心小剧场</li>
+											<li><em>演出时间：</em>2014年4月19日、26日下午13：00</li>
+											<li><em>咨询电话：</em>59188401</li>
+											<li><em>演出简介：</em>为音乐爱好者搭建才艺展示的平台，进一步呈现美好和谐的文化繁荣景象。 有钢琴独奏《船歌》、大提琴《旋 律》、葫芦丝《花满楼》，女声独唱《芦花》、小合唱《天路》等40余组选手报名参与。</li>
+											<div style="border-bottom:1px solid gray;margin-top:10px"></div>
+										</ul>
+
+										<ul class='detail'>
+											<li>
+											<span>现场参加</span>
+											<a href="">"乐在其中"2014年嘉定区音乐大赛（真新街道赛区）</a>  </li>
+											<li><em>主办单位：</em>真新街道文化体育服务中心</li>
+											<li><em>演出地点：</em>真新街道社区文化活动中心小剧场</li>
+											<li><em>演出时间：</em>2014年4月19日、26日下午13：00</li>
+											<li><em>咨询电话：</em>59188401</li>
+											<li><em>演出简介：</em>为音乐爱好者搭建才艺展示的平台，进一步呈现美好和谐的文化繁荣景象。 有钢琴独奏《船歌》、大提琴《旋 律》、葫芦丝《花满楼》，女声独唱《芦花》、小合唱《天路》等40余组选手报名参与。</li>
+
+										</ul>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 文化热点 -->
+				<div class="hot">
+					<h2 class="hottitile">文化热点</h2>
+					<div class="list">
+						<ul>
+							<li>
+							<a href=""><img src="images/img1_03.jpg" alt=""></a>
+							<span class="label">乐在其中"2014年嘉定区音乐大赛</span>
+							</li>
+							<li>
+							<a href=""><img src="images/img2_06.jpg" alt=""></a>
+							<span class="label">乐在其中"2014年嘉定区音乐大赛</span>
+							</li>
+							<li>
+							<a href=""><img src="images/img3_08.jpg" alt=""></a>
+							<span class="label">乐在其中"2014年嘉定区音乐大赛</span>
+							</li>
+							<li>
+							<a href=""><img src="images/img3_08.jpg" alt=""></a>
+							<span class="label">乐在其中"2014年嘉定区音乐大赛</span>
+							</li>
+							<li>
+							<a href=""><img src="images/img2_06.jpg" alt=""></a>
+							<span class="label">乐在其中"2014年嘉定区音乐大赛</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		<!-- 我要分享 我要预约部分 -->
+		<div class='shareFa clearfix'>
+			<div class='share clearfix'>
+				<h2 class='sharetitle'> </h2>
+				<div class="evencon shareshow" >
+				<!-- 我要分享内容展示部分 -->
+					<div class="eventop ">
+						<a href="" class='more'>MORE</a>
+						<div class="lnr">
+							<a class="lpre lnrs"  id='lnrac' ></a>
+							<a class="rnext lnrs" ></a>
+						</div>
+						<div class='navcon'>
+							<!-- 变换的内容1 -->
+								<div class='navcona'>
+									<ul class='sharexq'>
+										<li>
+											<img src="images/y1_10.jpg" alt="">
+											<div class="sharexq1">
+												<h3>第一张</h3>
+												<p>最近总跟小朋友撞脸，大家很好奇我小时候什么样子，下面分享我三个不同阶段的成长。因为是老照片拿手机拍下来的，大家将就看吧，我妈整天说我长坏了，小时候明明是瓜子脸，现在彻底变肉圆脸了！</p>
+												<div>
+													<img src="images/y2_15.jpg" alt="">
+													<img src="images/y2_17.jpg" alt="">
+													<img src="images/y3_19.jpg" alt="">
+												</div>
+											</div>
+										</li>
+										<li>
+											<img src="images/y1_10.jpg" alt="">
+											<div class="sharexq1">
+												<h3>第一张</h3>
+												<p>最近总跟小朋友撞脸，大家很好奇我小时候什么样子，下面分享我三个不同阶段的成长。因为是老照片拿手机拍下来的，大家将就看吧，我妈整天说我长坏了，小时候明明是瓜子脸，现在彻底变肉圆脸了！</p>
+												<div>
+													<img src="images/y2_15.jpg" alt="">
+													<img src="images/y2_17.jpg" alt="">
+													<img src="images/y3_19.jpg" alt="">
+												</div>
+											</div>
+										</li>
+
+									</ul>
+								</div>
+							<!--变换二  -->
+								<div class='navcona'>
+									<ul class='sharexq'>
+										<li>
+											<img src="images/y1_10.jpg" alt="">
+											<div class="sharexq1">
+												<h3>第二张</h3>
+												<p>最近总跟小朋友撞脸，大家很好奇我小时候什么样子，下面分享我三个不同阶段的成长。因为是老照片拿手机拍下来的，大家将就看吧，我妈整天说我长坏了，小时候明明是瓜子脸，现在彻底变肉圆脸了！</p>
+												<div>
+													<img src="images/y2_15.jpg" alt="">
+													<img src="images/y2_17.jpg" alt="">
+													<img src="images/y3_19.jpg" alt="">
+												</div>
+											</div>
+										</li>
+										<li>
+											<img src="images/y1_10.jpg" alt="">
+											<div class="sharexq1">
+												<h3>第二张</h3>
+												<p>最近总跟小朋友撞脸，大家很好奇我小时候什么样子，下面分享我三个不同阶段的成长。因为是老照片拿手机拍下来的，大家将就看吧，我妈整天说我长坏了，小时候明明是瓜子脸，现在彻底变肉圆脸了！</p>
+												<div>
+													<img src="images/y2_15.jpg" alt="">
+													<img src="images/y2_17.jpg" alt="">
+													<img src="images/y3_19.jpg" alt="">
+												</div>
+											</div>
+										</li>
+
+									</ul>
+								</div>
+							<!--变换三 -->
+								<div class='navcona'>
+									<ul class='sharexq'>
+										<li>
+											<img src="images/y1_10.jpg" alt="">
+											<div class="sharexq1">
+												<h3>第三张</h3>
+												<p>最近总跟小朋友撞脸，大家很好奇我小时候什么样子，下面分享我三个不同阶段的成长。因为是老照片拿手机拍下来的，大家将就看吧，我妈整天说我长坏了，小时候明明是瓜子脸，现在彻底变肉圆脸了！</p>
+												<div>
+													<img src="images/y2_15.jpg" alt="">
+													<img src="images/y2_17.jpg" alt="">
+													<img src="images/y3_19.jpg" alt="">
+												</div>
+											</div>
+										</li>
+										<li>
+											<img src="images/y1_10.jpg" alt="">
+											<div class="sharexq1">
+												<h3>第三张</h3>
+												<p>最近总跟小朋友撞脸，大家很好奇我小时候什么样子，下面分享我三个不同阶段的成长。因为是老照片拿手机拍下来的，大家将就看吧，我妈整天说我长坏了，小时候明明是瓜子脸，现在彻底变肉圆脸了！</p>
+												<div>
+													<img src="images/y2_15.jpg" alt="">
+													<img src="images/y2_17.jpg" alt="">
+													<img src="images/y3_19.jpg" alt="">
+												</div>
+											</div>
+										</li>
+
+									</ul>
+								</div>
+							<!--变换四  -->
+								<div class='navcona'>
+									<ul class='sharexq'>
+										<li>
+											<img src="images/y1_10.jpg" alt="">
+											<div class="sharexq1">
+												<h3>第四张</h3>
+												<p>最近总跟小朋友撞脸，大家很好奇我小时候什么样子，下面分享我三个不同阶段的成长。因为是老照片拿手机拍下来的，大家将就看吧，我妈整天说我长坏了，小时候明明是瓜子脸，现在彻底变肉圆脸了！</p>
+												<div>
+													<img src="images/y2_15.jpg" alt="">
+													<img src="images/y2_17.jpg" alt="">
+													<img src="images/y3_19.jpg" alt="">
+												</div>
+											</div>
+										</li>
+										<li>
+											<img src="images/y1_10.jpg" alt="">
+											<div class="sharexq1">
+												<h3>第四张</h3>
+												<p>最近总跟小朋友撞脸，大家很好奇我小时候什么样子，下面分享我三个不同阶段的成长。因为是老照片拿手机拍下来的，大家将就看吧，我妈整天说我长坏了，小时候明明是瓜子脸，现在彻底变肉圆脸了！</p>
+												<div>
+													<img src="images/y2_15.jpg" alt="">
+													<img src="images/y2_17.jpg" alt="">
+													<img src="images/y3_19.jpg" alt="">
+												</div>
+											</div>
+										</li>
+
+									</ul>
+								</div>
+						</div>
+					</div>
+				<!--我要分享发布功能部分  -->
+				<div class="send">
+					<span class="fx">分享</span>
+					<div class="sendcon clearfix">
+						<em>分享：</em>
+						<div class='sendin clearfix'>
+							<textarea name="" id="" cols="30" rows="10"></textarea>
+							<button type="button">发布</button>
+							<div class="add clearfix">
+								<img src="images/biao1.png" onclick="chii(0)">
+								<img src="images/biao2.png" onclick="chii(1)">
+								<img src="images/biao3.png" onclick="chii(2)">
+								<label>可以直接输入音乐或视频的url地址</label>
+							</div>
+						</div>
+					</div>
+					<!-- 选择图片部分 -->
+					<div class='scan clearfix'>
+						<b ></b>
+						<span class="close">X</span>
+						<div class="local">
+							<span>本地浏览：</span><input type="button" value='图片上传'></label>
+							<ul>
+								<li><img src="images/ii1_03.jpg" alt=""></li>
+								<li><img src="images/ii1_03.jpg" alt=""></li>
+								<li><img src="images/ii1_03.jpg" alt=""></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				</div>
+
+			</div>
+			<!-- 我要预约 -->
+			<div class='book'>
+				<h2 class="booktitile"> </h2>
+				<!-- 第一页 -->
+					<div class="bookcon" >
+						<img class='bookhead' src="images/z1_07.jpg" alt="">
+						<ul class='xxq'>
+							<li><a href="###">
+								<img src="images/ww_03.jpg" alt="">
+								<div class='bookxq'>
+									<h3>111嘉定体育馆</h3>
+									<p>场地：梅园路dsadsadsad315号</p>
+									<p>[地图]</p>
+									<p>电话：021-823940234
+										<span class='yy'>在线预约</span>
+									</p>
+									<div class='xzuo'></div>
+								</div>
+								</a>
+							</li>
+							<li><a href="###">
+								<img src="images/ww_03.jpg" alt="">
+								<div class='bookxq'>
+									<h3>111嘉定体育馆</h3>
+									<p>场地：梅园路dsadsadsad315号</p>
+									<p>[地图]</p>
+									<p>电话：021-823940234
+										<span class='yy'>在线预约</span>
+									</p>
+									<div class='xzuo'></div>
+								</div>
+								</a>
+							</li>
+							<li><a href="###">
+								<img src="images/ww_03.jpg" alt="">
+								<div class='bookxq'>
+									<h3>111嘉定体育馆</h3>
+									<p>场地：梅园路dsadsadsad315号</p>
+									<p>[地图]</p>
+									<p>电话：021-823940234
+										<span class='yy'>在线预约</span>
+									</p>
+									<div class='xzuo'></div>
+								</div>
+								</a>
+							</li>
+							<li><a href="###">
+								<img src="images/ww_03.jpg" alt="">
+								<div class='bookxq'>
+									<h3>111嘉定体育馆</h3>
+									<p>场地：梅园路dsadsadsad315号</p>
+									<p>[地图]</p>
+									<p>电话：021-823940234
+										<span class='yy'>在线预约</span>
+									</p>
+									<div class='xzuo'></div>
+								</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				<!-- 第二页 -->
+					<div class="bookcon" style="display:none">
+						<img class='bookhead' src="images/z1_07.jpg" alt="">
+						<ul class='xxq'>
+							<li>
+								<img src="images/ww_03.jpg" alt="">
+								<div class='bookxq'>
+									<h3>111嘉定体育馆</h3>
+									<p>场地：梅园路dsadsadsad315号</p>
+									<p>[地图]</p>
+									<p>电话：021-823940234
+										<span class='yy'>在线预约</span>
+									</p>
+									<div class='xzuo'></div>
+								</div>
+							</li>
+							<li>
+								<img src="images/ww_03.jpg" alt="">
+								<div class='bookxq'>
+									<h3>111嘉定体育馆</h3>
+									<p>场地：梅园路dsadsadsad315号</p>
+									<p>[地图]</p>
+									<p>电话：021-823940234
+										<span class='yy'>在线预约</span>
+									</p>
+									<div class='xzuo'></div>
+								</div>
+							</li>
+							<li>
+								<img src="images/ww_03.jpg" alt="">
+								<div class='bookxq'>
+									<h3>111嘉定体育馆</h3>
+									<p>场地：梅园路dsadsadsad315号</p>
+									<p>[地图]</p>
+									<p>电话：021-823940234
+										<span class='yy'>在线预约</span>
+									</p>
+									<div class='xzuo'></div>
+								</div>
+							</li>
+							<li>
+								<img src="images/ww_03.jpg" alt="">
+								<div class='bookxq'>
+									<h3>111嘉定体育馆</h3>
+									<p>场地：梅园路dsadsadsad315号</p>
+									<p>[地图]</p>
+									<p>电话：021-823940234
+										<span class='yy'>在线预约</span>
+									</p>
+									<div class='xzuo'></div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				<!--第三页-->
+					<div class="bookcon" style="display:none">
+						<img class='bookhead' src="images/z1_07.jpg" alt="">
+						<ul class='xxq'>
+							<li>
+								<img src="images/ww_03.jpg" alt="">
+								<div class='bookxq'>
+									<h3>111嘉定体育馆</h3>
+									<p>场地：梅园路dsadsadsad315号</p>
+									<p>[地图]</p>
+									<p>电话：021-823940234
+										<span class='yy'>在线预约</span>
+									</p>
+									<div class='xzuo'></div>
+								</div>
+							</li>
+							<li>
+								<img src="images/ww_03.jpg" alt="">
+								<div class='bookxq'>
+									<h3>111嘉定体育馆</h3>
+									<p>场地：梅园路dsadsadsad315号</p>
+									<p>[地图]</p>
+									<p>电话：021-823940234
+										<span class='yy'>在线预约</span>
+									</p>
+									<div class='xzuo'></div>
+								</div>
+							</li>
+							<li>
+								<img src="images/ww_03.jpg" alt="">
+								<div class='bookxq'>
+									<h3>111嘉定体育馆</h3>
+									<p>场地：梅园路dsadsadsad315号</p>
+									<p>[地图]</p>
+									<p>电话：021-823940234
+										<span class='yy'>在线预约</span>
+									</p>
+									<div class='xzuo'></div>
+								</div>
+							</li>
+							<li>
+								<img src="images/ww_03.jpg" alt="">
+								<div class='bookxq'>
+									<h3>111嘉定体育馆</h3>
+									<p>场地：梅园路dsadsadsad315号</p>
+									<p>[地图]</p>
+									<p>电话：021-823940234
+										<span class='yy'>在线预约</span>
+									</p>
+									<div class='xzuo'></div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!-- book翻页的控控制 -->
+					<ul class="bookcontrol">
+						<li class='bktr' id="book"></li>
+						<li class='bktr'></li>
+						<li class='bktr'></li>
+					</ul>
+				</div>
+			</div>
+
+		<!--为您推荐 -->
+		<div class='reccon clearfix'>
+			<h2 class=rectitle></h2>
+			<div class='recson juli'>
+				<div class="recl">
+					<img class='clearfix' src="images/kk1_03.jpg" alt="">
+					<div class='recimg clearfix'>
+						<img src="images/jcyc.png" alt="">
+						<img class='enter' src="images/ba_03.png">
+					</div>
+				</div>
+				<div class="recr">
+					<div class='topr'></div>
+					<div class='recr-t'>
+						<a href="">上海群文书法工作者优秀作品展</a>
+						<p>展览时间：2014年3月8日至3月20日</p>
+						<a href="">“丹青雅趣”真新街道市民书画作品展</a>
+						<p>展览时间：2014年3月10日至5月10日</p>
+					</div>
+					<ul class='recr-b'>
+						<li>祁风物 古韵刘芳</li>
+						<li>国画创作班2013年度成果展</li>
+						<li>甜甜蜜蜜贺新春——糖标文化收藏展</li>
+						<li>走进徐行——都市新农村摄影巡礼图片展</li>
+					</ul>
+				</div>
+			</div>
+
+
+			<div class='recson'>
+				<div class="recl">
+					<img class='clearfix' src="images/to1.jpg" alt="">
+					<div class='recimg clearfix'>
+						<img src="images/jpjz.png" alt="">
+						<img class='enter ' src="images/ba_03.png">
+					</div>
+				</div>
+				<div class="recr">
+					<div class='topr topr2'></div>
+					<div class='recr-t'>
+						<a href="">上海群文书法工作者优秀作品展</a>
+						<p>展览时间：2014年3月8日至3月20日</p>
+						<a href="">“丹青雅趣”真新街道市民书画作品展</a>
+						<p>展览时间：2014年3月10日至5月10日</p>
+					</div>
+					<ul class='recr-b'>
+						<li>祁风物 古韵刘芳</li>
+						<li>国画创作班2013年度成果展</li>
+						<li>甜甜蜜蜜贺新春——糖标文化收藏展</li>
+						<li>走进徐行——都市新农村摄影巡礼图片展</li>
+					</ul>
+				</div>
+			</div>
+
+
+			<div class='recson juli'>
+				<div class="recl">
+					<img class='clearfix' src="images/to2.jpg" alt="">
+					<div class='recimg clearfix'>
+						<img src="images/tezl.png" alt="">
+						<img class='enter ' src="images/ba_03.png">
+					</div>
+				</div>
+				<div class="recr">
+					<div class='topr topr3'></div>
+					<div class='recr-t'>
+						<a href="">上海群文书法工作者优秀作品展</a>
+						<p>展览时间：2014年3月8日至3月20日</p>
+						<a href="">“丹青雅趣”真新街道市民书画作品展</a>
+						<p>展览时间：2014年3月10日至5月10日</p>
+					</div>
+					<ul class='recr-b'>
+						<li>祁风物 古韵刘芳</li>
+						<li>国画创作班2013年度成果展</li>
+						<li>甜甜蜜蜜贺新春——糖标文化收藏展</li>
+						<li>走进徐行——都市新农村摄影巡礼图片展</li>
+					</ul>
+				</div>
+			</div>
+
+
+			<div class='recson'>
+				<div class="recl">
+					<img class='clearfix' src="images/to3.jpg" alt="">
+					<div class='recimg clearfix'>
+						<img src="images/jljd.png" alt="">
+						<img class='enter ' src="images/ba_03.png">
+					</div>
+				</div>
+				<div class="recr">
+					<div class='topr topr4'></div>
+					<div class='recr-t'>
+						<a href="">上海群文书法工作者优秀作品展</a>
+						<p>展览时间：2014年3月8日至3月20日</p>
+						<a href="">“丹青雅趣”真新街道市民书画作品展</a>
+						<p>展览时间：2014年3月10日至5月10日</p>
+					</div>
+					<ul class='recr-b'>
+						<li>祁风物 古韵刘芳</li>
+						<li>国画创作班2013年度成果展</li>
+						<li>甜甜蜜蜜贺新春——糖标文化收藏展</li>
+						<li>走进徐行——都市新农村摄影巡礼图片展</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--  -->
+
+
+	</div>
+	</section>
+	<footer>
+		<div class="footcon">
+			<p>上海市嘉定区文化广播影视管理局 版权所有 ICP备案号：沪ICP备13001862 访问量： 23226次</p>
+			<p>为达到最佳浏览效果，请使用ie8以上版本ie浏览器或360安全浏览器5.0以上版本</p>
+		</div>
+	</footer>
+	<div id="hide">
+		<div class="login">
+			<div class="logtop">
+				<span>欢迎登陆</span>
+				<b id="logcl">X</b>
+			</div>
+			<form action="">
+				<ul class="data">
+					<li><label for="">&nbsp;&nbsp;&nbsp;&nbsp;用户名：<input type="text" /></label></li>
+					<li><label for="">登录密码 ：<input type="text" /></label></li>
+					<li id="third"><label for="">&nbsp;&nbsp;&nbsp;&nbsp;验证码：</label><input type="text" /><img src="images/uu_03.jpg" alt=""><span>换一个</span></li>
+				</ul>
+				<button type="button">登录</button>
+			</form>
+			<div class="fuj">
+				<a href="###">找回账号</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+				<a href="###"> 忘记密码</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+				<a href="###">立即登录</a>
+			</div>
+		</div>
+	</div>
+
+
+	<script src='js/all.js'></script>
+</body>
+</html>
